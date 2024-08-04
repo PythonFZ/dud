@@ -54,12 +54,8 @@ First, clone the Dud code repository:
     git clone https://github.com/kevin-hanselman/dud
 
 Now use Make to build the Dud executable and install it in your Go binaries
-directory.
+directory. Make sure, that the your path if configured to include the Go directory, typically `PATH="`$HOME/go/bin:$PATH`"`.
 
     make install
 
-This command will compile Dud, run an automated test suite, and install Dud to
-a standard location. It will show you where it installed Dud, and if you have
-a standard Go environment, it will likely be installed at `~/go/bin/dud`. If you
-haven't already, add this directory to your `$PATH` environment variable so Dud
-is accessible from anywhere on your system.
+This command will compile Dud, run an automated test suite, and install Dud inside the GO directory, which it will show you.
